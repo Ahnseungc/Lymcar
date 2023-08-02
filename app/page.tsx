@@ -1,9 +1,15 @@
 import React from "react";
 
+import Maincontext from "@components/maincontext";
+
 type Props = {};
 
 function Home({}: Props) {
-  return <div>Home</div>;
+  return (
+    <>
+      <Maincontext />
+    </>
+  );
 }
 
 export default Home;
