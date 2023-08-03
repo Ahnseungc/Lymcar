@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -7,6 +8,9 @@ const nextConfig = {
   },
   compiler: {
     styledComponents: true,
+  },
+  images: {
+    domains: ["static.toss.im", "localhost", "play-lh.googleusercontent.com"],
   },
 };
 
