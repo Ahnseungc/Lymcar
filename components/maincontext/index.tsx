@@ -3,11 +3,10 @@
 import { useRef, useState } from "react";
 
 import { checkIsInViewport } from "@utils/checkIsInViewport";
+import Image from "next/image";
 import Link from "next/link";
 
-import Image from "next/image";
-
-import { Context, Contextcontainer, StyledLink, ButtonDiv } from "./style";
+import { ButtonDiv, Context, Contextcontainer, StyledLink } from "./style";
 import { useWindowScrollEvent } from "../../hooks/useWindowScrollEvent";
 
 type Props = {};

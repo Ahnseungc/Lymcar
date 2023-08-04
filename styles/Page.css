@@ -1,4 +1,30 @@
-.Page-box {
+/* .Page-box {
   width: 100%;
   height: 100%;
+} */
+.outer {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.outer::-webkit-scrollbar {
+  display: none;
+}
+
+.inner::-webkit-scrollbar {
+  display: none;
+}
+
+.inner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  width: 100%;
+  height: 5px;
 }

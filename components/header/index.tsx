@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { Detail, Detailcontainer, Maincontainer, IconContainer } from "./style";
+import { Detail, Detailcontainer, IconContainer, Maincontainer } from "./style";
 
 type Props = {};
 
@@ -22,7 +22,7 @@ const Header = ({}: Props) => {
       <Detailcontainer>
         <Detail>회사 소개</Detail>
         <Detail>고객 센터</Detail>
-        <Detail>위치</Detail>
+        <Detail>회사 위치</Detail>
       </Detailcontainer>
     </Maincontainer>
   );

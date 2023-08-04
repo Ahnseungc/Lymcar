@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 export const Contextcontainer = styled.div`
   display: flex;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
   align-items: flex-start;
   width: 100%;
 
@@ -42,7 +42,7 @@ export const Context = styled.h1<{ animation: boolean }>`
 
 export const StyledLink = styled.a`
   margin-right: 8px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0.8);
   color: rgba(0, 12, 30, 0.8);
   font-size: 17px;
   padding: 11px 22px;
