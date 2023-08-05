@@ -2,15 +2,17 @@
 
 import React, { useEffect, useRef } from "react";
 
-import Maincontext from "@components/maincontext";
-import Search from "@components/search";
+import Chat from "@components/chat";
 import Generate from "@components/generate";
+import Maincontext from "@components/maincontext";
+import Menu from "@components/menu";
+import Search from "@components/search";
 
 import "../styles/Page.css";
 
 type Props = {};
 
-const DIVIDER_HEIGHT = 3;
+const DIVIDER_HEIGHT = 5;
 
 function Home({}: Props) {
   const outerDivRef = useRef<HTMLInputElement>(undefined);
@@ -22,6 +24,8 @@ function Home({}: Props) {
       const { scrollTop } = outerDivRef.current;
       const pageHeight = window.innerHeight; //화면 세로길이
 
+      //스크롤 내릴때
+      // Scrolltop : 스크롤바 수직위치
       if (deltaY > 0) {
         if (scrollTop >= 0 && scrollTop < pageHeight) {
           outerDivRef.current.scrollTo({
@@ -35,14 +39,28 @@ function Home({}: Props) {
             left: 0,
             behavior: "smooth",
           });
-        } else {
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
           outerDivRef.current.scrollTo({
-            top: pageHeight * 2 + DIVIDER_HEIGHT * 2,
+            top: pageHeight * 3 + DIVIDER_HEIGHT * 2,
+            left: 0,
+            behavior: "smooth",
+          });
+        } else if (scrollTop >= pageHeight * 2 && scrollTop < pageHeight * 3) {
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 3 + DIVIDER_HEIGHT * 2,
+            left: 0,
+            behavior: "smooth",
+          });
+        } else if (scrollTop >= pageHeight * 3 && scrollTop < pageHeight * 4) {
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 4 + DIVIDER_HEIGHT * 2,
             left: 0,
             behavior: "smooth",
           });
         }
-      } else {
+      } //스크롤 올리때
+      else {
+        console.log(scrollTop, pageHeight);
         if (scrollTop >= 0 && scrollTop < pageHeight) {
           outerDivRef.current.scrollTo({
             top: 0,
@@ -55,9 +73,21 @@ function Home({}: Props) {
             left: 0,
             behavior: "smooth",
           });
-        } else {
+        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
           outerDivRef.current.scrollTo({
             top: pageHeight + DIVIDER_HEIGHT,
+            left: 0,
+            behavior: "smooth",
+          });
+        } else if (scrollTop >= pageHeight * 3 && scrollTop < pageHeight * 4) {
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 2 + DIVIDER_HEIGHT,
+            left: 0,
+            behavior: "smooth",
+          });
+        } else if (scrollTop >= pageHeight * 4 && scrollTop < pageHeight * 5) {
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 3 + DIVIDER_HEIGHT,
             left: 0,
             behavior: "smooth",
           });
@@ -84,6 +114,14 @@ function Home({}: Props) {
       <div className="divider"></div>
       <div className="inner">
         <Generate />
+      </div>
+      <div className="divider"></div>
+      <div className="inner">
+        <Menu />
+      </div>
+      <div className="divider"></div>
+      <div className="inner">
+        <Chat />
       </div>
       <div className="divider"></div>
     </div>
