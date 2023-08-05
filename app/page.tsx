@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import Chat from "@components/chat";
 import Generate from "@components/generate";
@@ -16,6 +16,7 @@ const DIVIDER_HEIGHT = 5;
 
 function Home({}: Props) {
   const outerDivRef = useRef<HTMLInputElement>(undefined);
+  const [animation, setAnimation] = useState(false);
 
   useEffect(() => {
     const wheelHandler = (e) => {
@@ -28,6 +29,8 @@ function Home({}: Props) {
       // Scrolltop : 스크롤바 수직위치
       if (deltaY > 0) {
         if (scrollTop >= 0 && scrollTop < pageHeight) {
+          setAnimation(true);
+
           outerDivRef.current.scrollTo({
             top: pageHeight + DIVIDER_HEIGHT,
             left: 0,
@@ -60,7 +63,6 @@ function Home({}: Props) {
         }
       } //스크롤 올리때
       else {
-        console.log(scrollTop, pageHeight);
         if (scrollTop >= 0 && scrollTop < pageHeight) {
           outerDivRef.current.scrollTo({
             top: 0,
@@ -109,7 +111,7 @@ function Home({}: Props) {
       </div>
       <div className="divider"></div>
       <div className="inner">
-        <Search />
+        <Search animation={animation} />
       </div>
       <div className="divider"></div>
       <div className="inner">
