@@ -1,11 +1,10 @@
 "use client";
 
 import type { FC } from "react";
-import { useEffect, useState } from "react";
 
 import Image from "next/image";
 
-import { Searchmaincontainer, SearchImage, Seacrhsubcontainer } from "./style";
+import { Seacrhsubcontainer, SearchImage, Searchmaincontainer } from "./style";
 
 interface Props {
   animation: boolean;
@@ -14,10 +13,7 @@ interface Props {
 const Search: FC<Props> = ({ animation }) => {
   return (
     <Searchmaincontainer>
-      <h1>
-        원하는 지역으로
-        <br /> 검색
-      </h1>
+      <h1>원하는 지역으로 검색</h1>
       <Seacrhsubcontainer>
         <SearchImage animation={animation}>
           <Image

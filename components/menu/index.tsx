@@ -1,35 +1,49 @@
 "use client";
 
+import type { FC } from "react";
+
 import Image from "next/image";
 
-import { Menumaincontainer } from "./style";
+import { Seacrhsubcontainer, SearchImage, Searchmaincontainer } from "./style";
 
-const Menu = () => {
+interface Props {
+  animation3: boolean;
+}
+
+const Menu: FC<Props> = ({ animation3 }) => {
   return (
-    <Menumaincontainer>
+    <Searchmaincontainer>
       <h1>즐겨찾기로 간편하게</h1>
-      <Image
-        src="/Menu/Menu1.png"
-        width="370"
-        height="812"
-        alt="/"
-        style={{ borderRadius: "20px" }}
-      />
-      <Image
-        src="/Menu/Menu2.png"
-        width="370"
-        height="812"
-        alt="/"
-        style={{ borderRadius: "20px" }}
-      />
-      <Image
-        src="/Menu/Menu3.png"
-        width="370"
-        height="812"
-        alt="/"
-        style={{ borderRadius: "20px" }}
-      />
-    </Menumaincontainer>
+      <Seacrhsubcontainer>
+        <SearchImage animation={animation3}>
+          <Image
+            src="/Menu/Menu1.png"
+            width="370"
+            height="700"
+            alt="/"
+            style={{ borderRadius: "20px" }}
+          />
+        </SearchImage>
+        <SearchImage animation={animation3}>
+          <Image
+            src="/Menu/Menu2.png"
+            width="370"
+            height="700"
+            alt="/"
+            style={{ borderRadius: "20px" }}
+          />
+        </SearchImage>
+        <SearchImage animation={animation3}>
+          <Image
+            src="/Menu/Menu3.png"
+            width="370"
+            height="700"
+            alt="/"
+            style={{ borderRadius: "20px" }}
+          />
+        </SearchImage>
+      </Seacrhsubcontainer>
+    </Searchmaincontainer>
   );
 };
 

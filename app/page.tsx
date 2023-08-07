@@ -16,7 +16,10 @@ const DIVIDER_HEIGHT = 5;
 
 function Home({}: Props) {
   const outerDivRef = useRef<HTMLInputElement>(undefined);
-  const [animation, setAnimation] = useState(false);
+  const [animation, setAnimation] = useState<boolean>(false);
+  const [animation2, setAnimation2] = useState<boolean>(false);
+  const [animation3, setAnimation3] = useState<boolean>(false);
+  const [animation4, setAnimation4] = useState<boolean>(false);
 
   useEffect(() => {
     const wheelHandler = (e) => {
@@ -30,31 +33,27 @@ function Home({}: Props) {
       if (deltaY > 0) {
         if (scrollTop >= 0 && scrollTop < pageHeight) {
           setAnimation(true);
-
           outerDivRef.current.scrollTo({
             top: pageHeight + DIVIDER_HEIGHT,
             left: 0,
             behavior: "smooth",
           });
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
+          setAnimation2(true);
           outerDivRef.current.scrollTo({
             top: pageHeight * 2 + DIVIDER_HEIGHT * 2,
             left: 0,
             behavior: "smooth",
           });
-        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
-          outerDivRef.current.scrollTo({
-            top: pageHeight * 3 + DIVIDER_HEIGHT * 2,
-            left: 0,
-            behavior: "smooth",
-          });
         } else if (scrollTop >= pageHeight * 2 && scrollTop < pageHeight * 3) {
+          setAnimation3(true);
           outerDivRef.current.scrollTo({
             top: pageHeight * 3 + DIVIDER_HEIGHT * 2,
             left: 0,
             behavior: "smooth",
           });
         } else if (scrollTop >= pageHeight * 3 && scrollTop < pageHeight * 4) {
+          setAnimation4(true);
           outerDivRef.current.scrollTo({
             top: pageHeight * 4 + DIVIDER_HEIGHT * 2,
             left: 0,
@@ -115,15 +114,15 @@ function Home({}: Props) {
       </div>
       <div className="divider"></div>
       <div className="inner">
-        <Generate />
+        <Generate animation2={animation2} />
       </div>
       <div className="divider"></div>
       <div className="inner">
-        <Menu />
+        <Menu animation3={animation3} />
       </div>
       <div className="divider"></div>
       <div className="inner">
-        <Chat />
+        <Chat animation4={animation4} />
       </div>
       <div className="divider"></div>
     </div>
