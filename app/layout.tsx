@@ -1,5 +1,9 @@
+"use client";
+
 import Header from "@components/header";
 
+import Head from "./head";
+import StyledComponentsRegistry from "./lib/registry";
 import "../styles/Main.css";
 
 export default function RootLayout({
@@ -9,10 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head />
+      <Head />
       <body>
-        <Header />
-        {children}
+        <StyledComponentsRegistry>
+          <Header />
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

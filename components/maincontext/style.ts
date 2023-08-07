@@ -40,7 +40,7 @@ export const Context = styled.h1<{ animation: boolean }>`
   font-weight: 340;
 `;
 
-export const StyledLink = styled.a`
+export const StyledLink = styled.div`
   margin-right: 8px;
   background-color: rgb(255, 255, 255, 0.8);
   color: rgba(0, 12, 30, 0.8);

@@ -3695,6 +3695,11 @@
   dependencies:
     "client-only" "0.0.1"
 
+"styled-reset@4.5.1":
+  "integrity" "sha512-6EvFWZRwaFRFxiPYMwmnzOe33rDkw5r9jIU0eEi49bkt6VSrvjeMp2ZOw/YFbw5SVs81llIY+5fzHtR2/VBZfQ=="
+  "resolved" "https://registry.npmjs.org/styled-reset/-/styled-reset-4.5.1.tgz"
+  "version" "4.5.1"
+
 "stylis@^4.3.0":
   "integrity" "sha512-E87pIogpwUsUwXw7dNyU4QDjdgVMy52m+XEOPEKUn161cCzWjjhPSQhByfd1CcNvrOLnXQ6OnnZDwnJrz/Z4YQ=="
   "resolved" "https://registry.npmjs.org/stylis/-/stylis-4.3.0.tgz"
