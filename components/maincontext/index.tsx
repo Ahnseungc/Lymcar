@@ -34,7 +34,10 @@ const Maincontext = ({}: Props) => {
         택시 비용 절감 <br />
         림카로부터 시작
         <ButtonDiv>
-          <Link href="https://apps.apple.com/kr/app/%EB%A6%BC%EC%B9%B4-%ED%83%9D%EC%8B%9C-%ED%95%A9%EC%8A%B9-%EC%95%B1/id6449635061">
+          <Link
+            href="https://apps.apple.com/kr/app/%EB%A6%BC%EC%B9%B4-%ED%83%9D%EC%8B%9C-%ED%95%A9%EC%8A%B9-%EC%95%B1/id6449635061"
+            style={{ textDecoration: "none", color: "rgba(0, 12, 30, 0.8)" }}
+          >
             <StyledLink>
               <Image
                 src="https://static.toss.im/png-icons/timeline/applekorea.png"
@@ -46,7 +49,10 @@ const Maincontext = ({}: Props) => {
             </StyledLink>
           </Link>
 
-          <Link href="https://play.google.com/store/apps/details?id=com.dldmswo1209.hallymtaxi&hl=ko-KR">
+          <Link
+            href="https://play.google.com/store/apps/details?id=com.dldmswo1209.hallymtaxi&hl=ko-KR"
+            style={{ textDecoration: "none", color: "rgba(0, 12, 30, 0.8)" }}
+          >
             <StyledLink>
               <Image
                 src="https://static.toss.im/png-icons/timeline/googleplay.png"
