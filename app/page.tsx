@@ -2,12 +2,11 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
-import Chat from "@components/chat";
-import Generate from "@components/generate";
-import Maincontext from "@components/maincontext";
-import Menu from "@components/menu";
-import Search from "@components/search";
-
+import Chat from "../components/chat";
+import Generate from "../components/generate";
+import Maincontext from "../components/maincontext";
+import Menu from "../components/menu";
+import Search from "../components/search";
 import "../styles/Page.css";
 
 type Props = {};
