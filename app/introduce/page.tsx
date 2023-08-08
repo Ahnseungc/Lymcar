@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 
-import { Introdmaincontainer, News, Subscription } from "./style";
+import {
+  Introdmaincontainer,
+  News,
+  Subscription,
+} from "../../styles/introduce";
 
 const Introduce = () => {
   return (
