@@ -2,14 +2,20 @@
 
 import { useRef, useState } from "react";
 
-import { checkIsInViewport } from "@utils/checkIsInViewport";
 import Image from "next/image";
 import Link from "next/link";
 
 import { ButtonDiv, Context, Contextcontainer, StyledLink } from "./style";
 import { useWindowScrollEvent } from "../../hooks/useWindowScrollEvent";
+import { checkIsInViewport } from "../../utils/checkIsInViewport";
 
 type Props = {};
+
+//이거는 수정 상항 입니다.
+//이거는 수정 상항 입니다.
+//이거는 수정 상항 입니다.
+//이거는 수정 상항 입니다.
+//이거는 수정 상항 입니다.
 
 const Maincontext = ({}: Props) => {
   const [animation, setAnimaion] = useState(true);
