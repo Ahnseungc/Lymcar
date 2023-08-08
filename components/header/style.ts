@@ -50,10 +50,14 @@ export const IconContainer = styled.div`
     font-size: 22px;
     font-weight: 300;
   }
+  & p:hover {
+    font-size: x-large;
+    transition: 0.2s ease-in-out;
+  }
   @media screen and (max-width: 392px) {
     justify-content: center;
     margin-left: 5vh;
-    margin-right: 2vh;
+    margin-right: 4vh;
 
     & p {
       display: none;

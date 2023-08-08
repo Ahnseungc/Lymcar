@@ -40,7 +40,7 @@ export const Context = styled.h1<{ animation: boolean }>`
   font-weight: 340;
 
   @media screen and (max-width: 392px) {
-    font-size: 50px;
+    font-size: 30px;
     line-height: 8vh;
   }
 `;
