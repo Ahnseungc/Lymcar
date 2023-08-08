@@ -1,9 +1,8 @@
 "use client";
 
-import Header from "@components/header";
-
 import Head from "./head";
 import StyledComponentsRegistry from "./lib/registry";
+import Header from "../components/header";
 import "../styles/Main.css";
 
 export default function RootLayout({
