@@ -13,9 +13,11 @@ interface Props {
 const Generate: FC<Props> = ({ animation2 }) => {
   return (
     <Searchmaincontainer>
+      <h1>원하는 시간 동성 탑승</h1>
       <Seacrhsubcontainer>
         <SearchImage animation={animation2}>
           <Image
+            layout="intrinsic"
             src="/Generate/Generate3.png"
             width="370"
             height="700"
@@ -25,6 +27,7 @@ const Generate: FC<Props> = ({ animation2 }) => {
         </SearchImage>
         <SearchImage animation={animation2}>
           <Image
+            layout="intrinsic"
             src="/Generate/Generate2.png"
             width="370"
             height="700"
@@ -34,6 +37,7 @@ const Generate: FC<Props> = ({ animation2 }) => {
         </SearchImage>
         <SearchImage animation={animation2}>
           <Image
+            layout="intrinsic"
             src="/Generate/Generate1.png"
             width="370"
             height="700"
@@ -42,7 +46,6 @@ const Generate: FC<Props> = ({ animation2 }) => {
           />
         </SearchImage>
       </Seacrhsubcontainer>
-      <h1>원하는 시간 동성 탑승</h1>
     </Searchmaincontainer>
   );
 };

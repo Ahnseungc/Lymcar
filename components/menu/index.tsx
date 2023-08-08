@@ -17,6 +17,7 @@ const Menu: FC<Props> = ({ animation3 }) => {
       <Seacrhsubcontainer>
         <SearchImage animation={animation3}>
           <Image
+            layout="intrinsic"
             src="/Menu/Menu1.png"
             width="370"
             height="700"
@@ -26,6 +27,7 @@ const Menu: FC<Props> = ({ animation3 }) => {
         </SearchImage>
         <SearchImage animation={animation3}>
           <Image
+            layout="intrinsic"
             src="/Menu/Menu2.png"
             width="370"
             height="700"
@@ -35,6 +37,7 @@ const Menu: FC<Props> = ({ animation3 }) => {
         </SearchImage>
         <SearchImage animation={animation3}>
           <Image
+            layout="intrinsic"
             src="/Menu/Menu3.png"
             width="370"
             height="700"

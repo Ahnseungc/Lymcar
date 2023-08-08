@@ -1,11 +1,20 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Maincontainer = styled.div`
+export const Maincontainer = styled.div<{ color: boolean }>`
+  ${(props) =>
+    props.color &&
+    css`
+      color: white;
+    `};
   width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-around;
   position: fixed;
+  & .introdlink {
+    text-decoration: none;
+    color: white;
+  }
 `;
 
 export const Detailcontainer = styled.div`
@@ -34,10 +43,20 @@ export const Detail = styled.div`
 export const IconContainer = styled.div`
   display: flex;
   align-items: center;
+
   padding: 10px 10px;
   & p {
     margin-left: 5px;
     font-size: 22px;
     font-weight: 300;
+  }
+  @media screen and (max-width: 392px) {
+    justify-content: center;
+    margin-left: 5vh;
+    margin-right: 2vh;
+
+    & p {
+      display: none;
+    }
   }
 `;

@@ -9,12 +9,22 @@ export const Searchmaincontainer = styled.div`
 
   & h1 {
     margin-left: 130vh;
-
     font-size: 40px;
     margin-bottom: 2vh;
     font-weight: 340;
     line-height: 1.4;
     color: #191f28;
+  }
+
+  @media screen and (max-width: 392px) {
+    & h1 {
+      width: 90%;
+      color: #191f28;
+      margin: 0;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 30vh;
+    }
   }
 `;
 
@@ -22,7 +32,6 @@ export const Seacrhsubcontainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-
   justify-content: center;
 `;
 
@@ -35,6 +44,13 @@ export const goup = keyframes`
 export const SearchImage = styled.div<{ animation: boolean }>`
   ${({ animation }) =>
     !animation && "transform: translateX(-120rem); opacity: 0;"}
+  width: 300px;
+  height: 500px;
+
+  @media screen and (max-width: 392px) {
+    width: 200px;
+    height: 500px;
+  }
 
   &:not(:last-child) {
     margin-right: 5vh;

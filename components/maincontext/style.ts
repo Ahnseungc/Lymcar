@@ -38,6 +38,11 @@ export const Context = styled.h1<{ animation: boolean }>`
   font-size: 100px;
   text-align: center;
   font-weight: 340;
+
+  @media screen and (max-width: 392px) {
+    font-size: 50px;
+    line-height: 8vh;
+  }
 `;
 
 export const StyledLink = styled.div`

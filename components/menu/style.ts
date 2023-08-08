@@ -15,6 +15,12 @@ export const Searchmaincontainer = styled.div`
     line-height: 1.4;
     color: #191f28;
   }
+  @media screen and (max-width: 392px) {
+    & h1 {
+      font-size: 30px;
+      margin-top: 20vh;
+    }
+  }
 `;
 
 export const Seacrhsubcontainer = styled.div`
@@ -36,6 +42,12 @@ export const SearchImage = styled.div<{ animation: boolean }>`
   ${({ animation }) =>
     !animation && "transform: translateX(-120rem); opacity: 0;"}
   animation : ${({ animation }) => animation && goup} 1.5s ease-in-out;
+  width: 300px;
+  height: 500px;
+  @media screen and (max-width: 392px) {
+    width: 200px;
+    height: 500px;
+  }
   &:not(:last-child) {
     margin-right: 5vh;
   }
