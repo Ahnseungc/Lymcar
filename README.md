@@ -1,9 +1,11 @@
 ### PC 화면
 
-![림카(PC)](https://github.com/Ahnseungc/Lymcar/assets/94547692/dee70611-2f81-40a4-8030-e6e9105a039d)
+![림카(PC)](https://github.com/Ahnseungc/Lymcar/assets/94547692/8d4108de-36c0-4350-920f-56e6b82db579)
+
 
 
 
 ### 모바일 화면
 
-![림카(모바일)](https://github.com/Ahnseungc/Lymcar/assets/94547692/8cd6ccc9-226d-48fa-af74-36d3cd901f32)
+
+![림카(모바일)](https://github.com/Ahnseungc/Lymcar/assets/94547692/f8acde2c-8bed-459f-a941-0e715d2440e0)
