@@ -1,6 +1,7 @@
 ### PC 화면
 
-![림카(PC)](https://github.com/Ahnseungc/Lymcar/assets/94547692/8d4108de-36c0-4350-920f-56e6b82db579)
+
+![림카(PC)](https://github.com/Ahnseungc/Lymcar/assets/94547692/8e893075-fff0-4f08-aa2c-61c674f624bf)
 
 
 
