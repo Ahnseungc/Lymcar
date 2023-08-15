@@ -18,7 +18,7 @@ const Generate: FC<Props> = ({ animation2 }) => {
         <SearchImage animation={animation2}>
           <Image
             layout="intrinsic"
-            src="/Generate/Generate3.png"
+            src="/Generate/generate3.png"
             width="370"
             height="700"
             alt="왜짤려"
@@ -28,7 +28,7 @@ const Generate: FC<Props> = ({ animation2 }) => {
         <SearchImage animation={animation2}>
           <Image
             layout="intrinsic"
-            src="/Generate/Generate2.png"
+            src="/Generate/generate2.png"
             width="370"
             height="700"
             alt="왜짤려"
@@ -38,7 +38,7 @@ const Generate: FC<Props> = ({ animation2 }) => {
         <SearchImage animation={animation2}>
           <Image
             layout="intrinsic"
-            src="/Generate/Generate1.png"
+            src="/Generate/generate1.png"
             width="370"
             height="700"
             alt="왜짤려"
