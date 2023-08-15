@@ -10,7 +10,7 @@ export const Searchmaincontainer = styled.div`
   & h1 {
     margin-left: 130vh;
     font-size: 40px;
-    margin-bottom: 2vh;
+    margin-bottom: 0vh;
     font-weight: 340;
     line-height: 1.4;
     color: #191f28;
@@ -58,7 +58,7 @@ export const SearchImage = styled.div<{ animation: boolean }>`
   }
 
   &:nth-child(1) {
-    margin-top: 22vh;
+    margin-top: 2vh;
   }
 
   &:nth-child(2) {

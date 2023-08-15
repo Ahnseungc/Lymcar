@@ -21,7 +21,7 @@ const Generate: FC<Props> = ({ animation2 }) => {
             src="/Generate/Generate3.png"
             width="370"
             height="700"
-            alt="왜짤려"
+            alt="/"
             style={{ borderRadius: "20px" }}
           />
         </SearchImage>
@@ -31,7 +31,7 @@ const Generate: FC<Props> = ({ animation2 }) => {
             src="/Generate/Generate2.png"
             width="370"
             height="700"
-            alt="왜짤려"
+            alt="/"
             style={{ borderRadius: "20px" }}
           />
         </SearchImage>
@@ -41,7 +41,7 @@ const Generate: FC<Props> = ({ animation2 }) => {
             src="/Generate/Generate1.png"
             width="370"
             height="700"
-            alt="왜짤려"
+            alt="/"
             style={{ borderRadius: "20px" }}
           />
         </SearchImage>
