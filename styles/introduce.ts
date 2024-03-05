@@ -6,6 +6,7 @@ export const goup = keyframes`
 `;
 
 export const Introdmaincontainer = styled.div`
+  font-style: "Pretendard";
   width: 100%;
   height: 100vh;
   background-image: url("/Introduce/introduce_back.jpg");
@@ -15,6 +16,7 @@ export const Introdmaincontainer = styled.div`
   align-items: center;
 
   & h1 {
+    font-style: "Pretendard";
     animation: ${() => goup} 1s ease-out;
     margin-top: 30vh;
     color: white;
@@ -24,6 +26,7 @@ export const Introdmaincontainer = styled.div`
 
   @media screen and (max-width: 392px) {
     & h1 {
+      font-style: "Pretendard";
       font-size: 30px;
     }
   }
@@ -33,6 +36,7 @@ export const Subscription = styled.div`
   color: white;
 
   &:hover {
+    font-style: "Pretendard";
     font-size: large;
     transition: all 0.3s ease-in;
   }
@@ -45,14 +49,17 @@ export const News = styled.div`
   color: white;
 
   & h2 {
+    font-style: "Pretendard";
     font-weight: 400;
   }
 
   & p:hover {
+    font-style: "Pretendard";
     color: rgba(14, 46, 97);
     transition: all 0.5s ease-in-out;
   }
   @media screen and (max-width: 392px) {
+    font-style: "Pretendard";
     font-size: 17px;
     width: 100;
     margin-top: 30vh;
